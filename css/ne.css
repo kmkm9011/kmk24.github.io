@@ -868,7 +868,7 @@ body{background-color: #252525;}
     .result__contents{
         grid-template-columns: 1fr;
     }
-    .result__contents .description-nochip{
+    .result__contents .description-description{
         grid-column: 1 / 2;
     }
     /*-------------------- 아웃풋 로고 --------------------*/
