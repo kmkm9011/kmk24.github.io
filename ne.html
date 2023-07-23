@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>NexR Enterprise</title>
+    <meta name="author" content="Mi-kyung Kim">
+    <meta name="Description" contents="Mi-kyung's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- <link rel="icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicon.ico/favicon-32x32.png"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/ne.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // import html
+            $(".cover").load("./html/cover.html", function(){
+                $("#cover__name").html("NexR Enterprise<br>Design");
+                $("#cover__date").html("2020.09 ~ 현재");
+                $("#cover__member").html("디자인 1명");
+                $("#cover__percent").html("디자인 100%");
+
+                $("#cover_release").hide()
+                // $("#cover__figma").hide();
+                // $("#cover__ps").hide();
+                // $("#cover__ai").hide();
+                $("#cover__ppt").hide();
+                $("#cover__ae").hide();
+                $("#cover__sketch").hide();
+                $("#cover__zepplin").hide();
+            });    
+            $("#footer").load("./html/footer.html"); 
+        });       
+    </script>
+</head>
+<body>
+    <div class="cover"></div>
+    <!-------------------- 인트로 1400 이상 --------------------->
+    <section class="intro">
+        <div class="section__wrap nopadding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">소개</div>
+                <h2 class="section__title">빅데이터 통합 플랫폼</h2>
+            </div>
+            <ul class="intro__contents">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>
+                    <div class="chip-flex">
+                        <div class="chip-wrap">
+                            <p class="chip"># 빅데이터</p>
+                            <p class="chip"># 수집</p>
+                            <p class="chip"># 분석</p>
+                            <p class="chip"># 시각화</p>
+                            <p class="chip"># 머신러닝</p>
+                        </div>
+                        <p class="p-body w-80">데이터를 쉽게 활용하고 데이터 자산 확보를 할 수 있도록 데이터 수집부터 관리 그리고 분석, 시각화, 머신러닝 모델 운영까지 사용자 데이터 흐름에 맞춘 최적화된 데이터레이크를 위한 서비스를 제공합니다. NE는 현재 출시된 NEA / NEB / NDC를 포함하여 출시 예정 서비스까지 총 11개의 서비스를 준비하고 있습니다.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <!-------------------- 인트로 1400 이하 --------------------->
+    <div class="intro-1400">
+        <ul class="intro__contents">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-------------------- 문제점 --------------------->
+    <section class="problem">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제점</div>
+                <h2 class="section__title">구분이 안 되는 서비스</h2>
+            </div>
+            <ul class="problem__contents">
+                <p class="description-nochip p-body w-80">NexR Enterprise는 11개의 서비스를 제공하기로 기획되었으며, 이 때문에 흑백 컬러의 기획서가 나왔을 때 서비스가 구분이 안 된다는 의견이 많았습니다.
+                    사용자가 서비스를 헷갈리는 경우, 오 클릭과 이탈을 유발할 수 있습니다. 
+                    따라서 문제점 파악 및 “서비스 구분율 증대"와 “이탈률 감소"를 목표로 프로젝트를 진행했습니다.
+                </p>
+                <div class="problem__img"></div>
+                <div class="problem__arrow"></div>
+                <div class="problem__arrow hide"></div>
+                <div class="problem__arrow hide"></div>
+                <ul class="problem__problem">
+                    <li><p class="p-label w-100">문제 01</p></li>
+                    <li><h5 class="w-100">서비스 구분이 안 돼요</h5></li>
+                    <li>
+                        <p class="p-body w-80"><span class="quote-l"></span>텍스트를 읽어야지 어떤 서비스인지 구별할 수 있어요.</p>
+                        <p class="p-body w-80"><span class="quote-l"></span>한번에 내가 필요한 서비스를 클릭하기 힘들어요.</p>
+                    </li>
+                </ul>
+                <ul class="problem__problem">
+                    <li><p class="p-label w-100">문제 02</p></li>
+                    <li><h5 class="w-100">통일성이 없는 것 같아요</h5></li>
+                    <li>
+                        <p class="p-body w-80"><span class="quote-l"></span>Enterprise 제품인데 한 울타리에 있는 것 같지 않아요.</p>
+                        <p class="p-body w-80"><span class="quote-l"></span>서로 연관된 서비스인지는 잘 모르겠어요.</p>
+                    </li>
+                </ul>
+                <ul class="problem__problem">
+                    <li><p class="p-label w-100">문제 03</p></li>
+                    <li><h5 class="w-100">시작부터 어려울 것 같아요</h5></li>
+                    <li>
+                        <p class="p-body w-80"><span class="quote-l"></span>빅데이터 제품이라 어려울 것 같아요.</p>
+                        <p class="p-body w-80"><span class="quote-l"></span>전문성이 돋보이지만 진입 장벽이 높아 보여요.</p>
+                    </li>
+                </ul>
+                <div class="problem__arrow"></div>
+                <div class="problem__arrow hide"></div>
+                <div class="problem__arrow hide"></div>
+                <div class="problem__question block2">
+                    <h6 class="w-100">
+                        <span class="quote-l"></span>
+                        각 서비스에 개성과 통일성을 동시에 부여할 수 있을까?
+                        <span class="quote-r"></span>
+                    </h6>
+                </div>
+
+                <div class="problem__question">
+                    <h6 class="w-100">
+                        <span class="quote-l"></span>
+                        쉽게 다가갈 수 없을까?
+                        <span class="quote-r"></span>
+                    </h6>
+                </div>
+            </ul>
+
+        </div>
+    </section>
+    <!-------------------- 문제점 01-인사이트 --------------------->
+    <section class="problem01in">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 01 - 인사이트</div>
+                <h2 class="section__title">개성과 통일성</h2>
+            </div>
+            <ul class="problem01in__contents">
+                <div class="description-chip">
+                    <p class="chip"># 데스트 리서치</p>
+                    <h5 class="w-100">하위 서비스가 많은 타 제품들은 어떻게 개성과 통일성을 동시에 부여 했을까?</h5>
+                </div>
+                <div class="problem01in__a">
+                    <h6 class="problem01in__title w-80">A 타입</h6>
+                    <div class="problem01in__img">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="problem01in__type p-title w-80">같은 컬러 / 다른 형태</p>
+                    <div class="problem01in_arrow"></div>
+                    <div class="problem01in_problem">
+                        <p class="p-title w-80">문제점</p>
+                        <p class="p-body w-80">NexR Enterprise 제품은 빅데이터 특성상 테이블을 많이 사용하여 형태적으로 비슷하며, 특색있는 UI를 구성하기 힘듭니다.</p>
+                    </div>
+                    <div class="problem01in_arrow"></div>
+                    <p class="problem01in_pass p-body w-80">다른 형태를 사용할 수 없음으로, 같은 컬러를 사용할 시 서비스들이 헷갈릴 수 있어 사용할 수 없습니다.</p>
+                </div>
+                <div class="problem01in__b">
+                    <h6 class="problem01in__title w-100">B 타입</h6>
+                    <div class="problem01in__img">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="problem01in__type p-title w-80">다른 컬러 / 비슷한 형태</p>
+                    <div class="problem01in_arrow"></div>
+                    <div class="problem01in_problem">
+                        <p class="p-title w-100">문제점</p>
+                        <p class="p-body w-80">NexR Enterprise 제품은 빅데이터 특성상 테이블을 많이 사용하여 형태적으로 비슷하며, 특색있는 UI를 구성하기 힘듭니다.</p>
+                    </div>
+                    <div class="problem01in_arrow"></div>
+                    <div class="problem01in__select">
+                        <h6 class="w-100">
+                            <span class="quote-l"></span>
+                            다른 컬러 / 비슷한 형태를 사용하여 로고와 UI를 구성하자
+                            <span class="quote-r"></span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="problem01in__problem">
+                    <p class="p-title w-100">문제점</p>
+                    <p class="p-body w-80">NexR Enterprise 제품은 빅데이터 특성상 테이블을 많이 사용하여 형태적으로 비슷하며, 특색있는 UI를 구성하기 힘듭니다.</p>
+                </div>
+            </ul>
+
+        </div>
+    </section>
+    <!-------------------- 문제점 01-결과1 --------------------->
+    <section class="problem01re01">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 01 - 로고 결과</div>
+                <h2 class="section__title">개성과 통일성</h2>
+            </div>
+            <div class="problem01re01__contents">
+                <div class="description-chip">
+                    <p class="chip"># 로고 디자인</p>
+                    <h5 class="w-100">다른 컬러 / 비슷한 형태로 로고를 디자인하자</h5>
+                </div>
+                <div class="problem01re01__a">
+                    <div class="problem01re01__title">
+                        <h6 class="w-100">개성 - 다른 컬러</h6>
+                        <p class="p-title w-80">그라데이션</p>
+                    </div>
+                    <p class="problem01re01__description p-body w-80">
+                        NexR Enterprise의 제품은 성격상 Table(표) 형식이 많으므로, 한눈에 다른 서비스임을 구분할 수 있도록 컬러에서 개성을 표현하고자 했습니다.
+                        하지만 11개의 서비스가 컬러가 뚜렷이 구분되어야 하므로, 사용할 수 있는 컬러가 제한적이라는 문제가 발생했습니다.
+                        이를 해결하기 위해 그라디언트 컬러를 사용하여 컬러 사용의 폭을 넓히고, dentity 컬러로 각 서비스를 구분할 수 있도록 로고를 제작했습니다.
+                    </p>
+                    <ul class="problem01re01__color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="problem01re01__arrow"></div>    
+                    <div class="problem01re01__logo"></div>                
+                </div>
+                <div class="problem01re01__b">
+                    <div class="problem01re01__title">
+                        <h6 class="w-100">통일성 - 비슷한 형태</h6>
+                        <p class="p-title w-80">형태의 규칙성</p>
+                    </div>
+                    <p class="problem01re01__description p-body w-80">
+                        빅데이터를 상징할 수 있는 'Data Lake'를 선택했습니다. 여기서 한 번 더 단순화를 거쳐 '물결' 아이콘을 빅데이터의 상징으로 삼았으며, 
+                        동시에 로고의 통일성을 주기 위한 장치로 사용하게 되었습니다.또한 로고에 알파벳을 숨겨 개성과 재미를 더하고, 
+                        각 서비스를 상징할 수 있는 메타포를 사용하여 서비스의 Identity를 챙기면서 규칙성을 생성하여 동시에 통일감을 줄 수 있도록 의도했습니다.
+                    </p>
+                    <div class="problem01re01__process">
+                        <ul class="problem01re01__neb">
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">+</P></li>
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">+</P></li>
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">=</P></li>
+                            <li class="problem01re01__img"></li>
+                        </ul>
+                        <ul class="problem01re01__ncs">
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">+</P></li>
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">+</P></li>
+                            <li class="problem01re01__img"></li>
+                            <li class="problem01re01__p"><P class="p-title w-80">=</P></li>
+                            <li class="problem01re01__img"></li>
+                        </ul>
+                        <ul class="problem01re01__tet">
+                            <li><p class="p-title w-80">빅데이터</p></li>
+                            <li class="problem01re01__p"></li>
+                            <li><p class="p-title w-80">알파벳</p></li>
+                            <li class="problem01re01__p"></li>
+                            <li><p class="p-title w-80">메타포</p></li>
+                            <li class="problem01re01__p"></li>
+                            <li><p class="p-title w-80">결과</p></li>
+                        </ul>
+                    </div>       
+                    <div class="problem01re01__arrow"></div>     
+                    <div class="problem01re01__logo"></div>      
+                </div>
+                <div class="problem01re01__logo">
+                    <h6 class="w-100">서비스 로고 아웃풋</h6>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>        
+            </div>
+        </div>
+    </section>
+    <!-------------------- 문제점 01-결과2 --------------------->
+    <section class="problem01re02">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 01 - UI 결과</div>
+                <h2 class="section__title">개성과 통일성</h2>
+            </div>
+            <div class="problem01re02__contents">
+                <div class="description-chip">
+                    <p class="chip"># UI 디자인</p>
+                    <h5 class="w-100">다른 컬러 / 비슷한 형태로 UI를 디자인하자</h5>
+                </div>
+                <div class="problem01re02__a">
+                    <div class="problem01re02__title">
+                        <h6 class="w-100">개성 - 다른 컬러</h6>
+                        <p class="p-title w-80">그라데이션</p>
+                    </div>
+                    <p class="problem01re02__description p-body w-80">
+                        로고와 동일하게 그라데이션 컬러를 활용하여 UI를 구성했습니다.
+                        특히 넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 한눈에 어떤 서비스를 사용 중인지 사용자가 인지할 수 있도록 설계했습니다.
+                    </p>
+                    <div class="problem01re02__img"></div>
+                </div>
+                <div class="problem01re02__b">
+                    <div class="problem01re02__title">
+                        <h6 class="w-100">통일성 - 비슷한 형태</h6>
+                        <p class="p-title w-80">디자인 시스템</p>
+                    </div>
+                    <p class="problem01re02__description p-body w-80">
+                        UI에 통일성을 부여하고 여러 서비스에 적용할 수 있도록 디자인 시스템을 제작했으며, 효율적인 관리를 위해 포토샵에서 피그마로 전환했습니다. 
+                        그 결과, 프론트 개발 코드 길이를 단축하여 개발 효율성 증대되었고, 관리 비용을 대폭 절감하여 작업 시간이 3개월 이상 단축되었습니다. 
+                    </p>
+                    <div class="problem01re02__img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 문제점 02-인사이트 --------------------->
+    <section class="problem02in">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 - 인사이트</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="problem02in__contents">
+                <div class="description-chip">
+                    <p class="chip"># 인터뷰</p>
+                    <h5 class="w-100">쉽다고 느끼는 시각 요소는 어떤 것일까?</h5>
+                    <p class="problem02in__description p-body w-80">
+                        사용자들이 쉽다고 느끼는 시각 요소를 알아내기 위해 레퍼런스를 수집하여 간단한 인터뷰를 진행했습니다. 
+                        레퍼런스는 각기 다른 50가지의 이미지를 제공했으며, 쉬워보이는 이미지와 어려워 보이는 이미지를 분류해달라고 요청했습니다. 
+                        그 결과 중복되는 이미지가 발생했고, 해당 이미지의 특징을 추출하여 해당 키워드를 화면에 적용하기로 했습니다.
+                    </p>
+                </div>
+                <div class="problem02in__a">
+                    <h6 class="problem02in__title w-100">어려워 보이는 화면</h6>
+                    <ul class="problem02in__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="problem02in__b">
+                    <h6 class="problem02in__title w-100">쉬워 보이는 화면</h6>
+                    <ul class="problem02in__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 문제점 02-결과 --------------------->
+    <section class="problem02re">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="problem02re__contents">
+                <div class="description-description">
+                    <p class="problem02re__description p-body w-80">
+                        누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                        컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다. 
+                        넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.
+                        </br></br>
+                        부드러운 이미지와 함께 가벼운 느낌을 함께 주어 '누구나 사용할 수 있는 쉬운 툴'을 강조하려 했습니다.
+                        아기자기하고 귀여운 요소가 적용된 일러스트를 제공하여 무겁지 않고 발랄하고 가벼운 인상을 심어주려 노력했습니다.
+                        일러스트의 노출 빈도가 잦을 경우, 오히려 전문적인 이미지에 손실이 갈 수 있어 로그인 / 500 에러 / 404 에러 페이지로 노출 빈도를 제한했습니다.
+                    </p>
+                </div>
+                <ul class="problem02re__img">
+                    <li class="problem02re__before">
+                        <div></div>
+                        <div></div>
+                    </li>
+                    <li class="problem02re__arrow"></li>
+                    <li class="problem02re__after">
+                        <div></div>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 결과 --------------------->
+    <section class="result">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="result__contents">
+                <div class="description-description">
+                    <p class="result__description p-body w-80">
+                        누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                        컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다. 
+                        넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.
+                        </br></br>
+                        부드러운 이미지와 함께 가벼운 느낌을 함께 주어 '누구나 사용할 수 있는 쉬운 툴'을 강조하려 했습니다.
+                        아기자기하고 귀여운 요소가 적용된 일러스트를 제공하여 무겁지 않고 발랄하고 가벼운 인상을 심어주려 노력했습니다.
+                        일러스트의 노출 빈도가 잦을 경우, 오히려 전문적인 이미지에 손실이 갈 수 있어 로그인 / 500 에러 / 404 에러 페이지로 노출 빈도를 제한했습니다.
+                    </p>
+                </div>
+                <div class="result__chart-a">
+                    <h6 class="result__title b-100">서비스 구분율 증대</h6>
+                    <div class="result__text p-title w-60">미션 : 5개의 서비스를 순서대로 클릭하시오</div>
+                    
+                    <ul class="result__chart-wrap">
+                        <li class="result__chart01">
+                            <div class="result__chartbar">
+                                <div></div>
+                                <div><div></div></div>
+                            </div>
+                            <div class="result__bottom"></div>
+                            <h6 class="w-100">오클릭 평균 횟수</h6>
+                            <p class="p-title w-60">4회 -> 0회</p>
+                        </li>
+                        <li class="result__chart02">
+                            <div class="result__chartbar">
+                                <div></div>
+                                <div><div></div></div>
+                            </div>
+                            <div class="result__bottom"></div>
+                            <h6 class="w-100">오클릭 평균 횟수</h6>
+                            <p class="p-title w-60">4회 -> 0회</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="result__chart-b">
+                    <h6 class="result__title b-100">서비스 구분율 증대</h6>
+                    <div class="result__text p-title w-60">미션 : 5개의 서비스를 순서대로 클릭하시오</div>
+                    
+                    <ul class="result__chart-wrap">
+                        <li class="result__chart01">
+                            <div class="result__chartbar">
+                                <div></div>
+                                <div><div></div></div>
+                            </div>
+                            <div class="result__bottom"></div>
+                            <h6 class="w-100">오클릭 평균 횟수</h6>
+                            <p class="p-title w-60">4회 -> 0회</p>
+                        </li>
+                        <li class="result__chart02">
+                            <div class="result__chartbar">
+                                <div></div>
+                                <div><div></div></div>
+                            </div>
+                            <div class="result__bottom"></div>
+                            <h6 class="w-100">오클릭 평균 횟수</h6>
+                            <p class="p-title w-60">4회 -> 0회</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 아웃풋-로고 --------------------->
+    <section class="outputlogo">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="outputlogo__contents">
+                <div class="outputlogo__logo neb">
+                    <div class="description-nochip">
+                        <h6 class="w-100">Ne Olap DB</h6>
+                        <p class="p-body w-80">NexR Enterprise Olap DB는 온라인 분석 처리와 시각화를 위한 고속 쿼리 엔진을 제공합니다.
+                            Olap은 데이터를 쌓아 필요할 때 꺼내 읽는 특징이 있으며, 데이터가 많이 저장되어 느린 특징이 있습니다. NE Olap DB는 이를 개선하기 위해 데이터베이스를 사용하여 빠른 속도를 제공합니다.
+                            형태적 요소로는 Olap의 O와 관용적 메타포인 큐브 모양을, 컬러적 요소로는 빠름을 의미하는 붉을 계열을 사용했습니다.
+                        </p>
+                    </div>
+                    <div class="outputlogo__center" >
+                        <div class="outputlogo__logowrap">
+                            <ul class="outputlogo__logoimg">
+                                <li class="outputlogo__wave"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__alphabet"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__metaphor"></li>
+                                <li><P class="p-title w-80">=</P></li>
+                                <li class="outputlogo__result"></li>
+                            </ul>
+                            <ul class="outputlogo__logotet">
+                                <li><P class="p-title w-80">빅데이터</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">알파벳</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">메타포</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">결과</P></li>
+                            </ul>
+                        </div>
+                        <ul class="outputlogo__colorwrap">
+                            <li class="outputlogo__color"></li>
+                            <li class="outputlogo__colortet">
+                                <p>
+                                    <span class="p-title w-80">#666666</span>
+                                    <span class="p-body w-60">#666666</span>
+                                </p>
+                                <p>
+                                    <span class="p-body w-60">#666666</span>
+                                    <span class="p-title w-80">#666666</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="outputlogo__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div><div class="outputlogo__logo nea">
+                    <div class="description-nochip">
+                        <h6 class="w-100">Ne Olap DB</h6>
+                        <p class="p-body w-80">NexR Enterprise Olap DB는 온라인 분석 처리와 시각화를 위한 고속 쿼리 엔진을 제공합니다.
+                            Olap은 데이터를 쌓아 필요할 때 꺼내 읽는 특징이 있으며, 데이터가 많이 저장되어 느린 특징이 있습니다. NE Olap DB는 이를 개선하기 위해 데이터베이스를 사용하여 빠른 속도를 제공합니다.
+                            형태적 요소로는 Olap의 O와 관용적 메타포인 큐브 모양을, 컬러적 요소로는 빠름을 의미하는 붉을 계열을 사용했습니다.
+                        </p>
+                    </div>
+                    <div class="outputlogo__center" >
+                        <div class="outputlogo__logowrap">
+                            <ul class="outputlogo__logoimg">
+                                <li class="outputlogo__wave"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__alphabet"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__metaphor"></li>
+                                <li><P class="p-title w-80">=</P></li>
+                                <li class="outputlogo__result"></li>
+                            </ul>
+                            <ul class="outputlogo__logotet">
+                                <li><P class="p-title w-80">빅데이터</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">알파벳</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">메타포</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">결과</P></li>
+                            </ul>
+                        </div>
+                        <ul class="outputlogo__colorwrap">
+                            <li class="outputlogo__color"></li>
+                            <li class="outputlogo__colortet">
+                                <p>
+                                    <span class="p-title w-80">#666666</span>
+                                    <span class="p-body w-60">#666666</span>
+                                </p>
+                                <p>
+                                    <span class="p-body w-60">#666666</span>
+                                    <span class="p-title w-80">#666666</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="outputlogo__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 아웃풋-로고 --------------------->
+    <section class="outputlogo">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+            </div>
+            <div class="outputlogo__contents">
+                <div class="outputlogo__logo neb">
+                    <div class="description-nochip">
+                        <h6 class="w-100">Ne Olap DB</h6>
+                        <p class="p-body w-80">NexR Enterprise Olap DB는 온라인 분석 처리와 시각화를 위한 고속 쿼리 엔진을 제공합니다.
+                            Olap은 데이터를 쌓아 필요할 때 꺼내 읽는 특징이 있으며, 데이터가 많이 저장되어 느린 특징이 있습니다. NE Olap DB는 이를 개선하기 위해 데이터베이스를 사용하여 빠른 속도를 제공합니다.
+                            형태적 요소로는 Olap의 O와 관용적 메타포인 큐브 모양을, 컬러적 요소로는 빠름을 의미하는 붉을 계열을 사용했습니다.
+                        </p>
+                    </div>
+                    <div class="outputlogo__center" >
+                        <div class="outputlogo__logowrap">
+                            <ul class="outputlogo__logoimg">
+                                <li class="outputlogo__wave"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__alphabet"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__metaphor"></li>
+                                <li><P class="p-title w-80">=</P></li>
+                                <li class="outputlogo__result"></li>
+                            </ul>
+                            <ul class="outputlogo__logotet">
+                                <li><P class="p-title w-80">빅데이터</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">알파벳</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">메타포</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">결과</P></li>
+                            </ul>
+                        </div>
+                        <ul class="outputlogo__colorwrap">
+                            <li class="outputlogo__color"></li>
+                            <li class="outputlogo__colortet">
+                                <p>
+                                    <span class="p-title w-80">#666666</span>
+                                    <span class="p-body w-60">#666666</span>
+                                </p>
+                                <p>
+                                    <span class="p-body w-60">#666666</span>
+                                    <span class="p-title w-80">#666666</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="outputlogo__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div><div class="outputlogo__logo nea">
+                    <div class="description-nochip">
+                        <h6 class="w-100">Ne Olap DB</h6>
+                        <p class="p-body w-80">NexR Enterprise Olap DB는 온라인 분석 처리와 시각화를 위한 고속 쿼리 엔진을 제공합니다.
+                            Olap은 데이터를 쌓아 필요할 때 꺼내 읽는 특징이 있으며, 데이터가 많이 저장되어 느린 특징이 있습니다. NE Olap DB는 이를 개선하기 위해 데이터베이스를 사용하여 빠른 속도를 제공합니다.
+                            형태적 요소로는 Olap의 O와 관용적 메타포인 큐브 모양을, 컬러적 요소로는 빠름을 의미하는 붉을 계열을 사용했습니다.
+                        </p>
+                    </div>
+                    <div class="outputlogo__center" >
+                        <div class="outputlogo__logowrap">
+                            <ul class="outputlogo__logoimg">
+                                <li class="outputlogo__wave"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__alphabet"></li>
+                                <li><P class="p-title w-80">+</P></li>
+                                <li class="outputlogo__metaphor"></li>
+                                <li><P class="p-title w-80">=</P></li>
+                                <li class="outputlogo__result"></li>
+                            </ul>
+                            <ul class="outputlogo__logotet">
+                                <li><P class="p-title w-80">빅데이터</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">알파벳</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">메타포</P></li>
+                                <li></li>
+                                <li><P class="p-title w-80">결과</P></li>
+                            </ul>
+                        </div>
+                        <ul class="outputlogo__colorwrap">
+                            <li class="outputlogo__color"></li>
+                            <li class="outputlogo__colortet">
+                                <p>
+                                    <span class="p-title w-80">#666666</span>
+                                    <span class="p-body w-60">#666666</span>
+                                </p>
+                                <p>
+                                    <span class="p-body w-60">#666666</span>
+                                    <span class="p-title w-80">#666666</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="outputlogo__img">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 아웃풋 디자인시스템 --------------------->
+    <section class="outputsystem">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="outputsystem__contents">
+                <div class="description-description">
+                    <p class="outputsystem__description p-body w-80">
+                        누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                        컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다.
+                        넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.        
+                        </br></br>
+                        부드러운 이미지와 함께 가벼운 느낌을 함께 주어 '누구나 사용할 수 있는 쉬운 툴'을 강조하려 했습니다.
+                        아기자기하고 귀여운 요소가 적용된 일러스트를 제공하여 무겁지 않고 발랄하고 가벼운 인상을 심어주려 노력했습니다.
+                        일러스트의 노출 빈도가 잦을 경우, 오히려 전문적인 이미지에 손실이 갈 수 있어 로그인 / 500 에러 / 404 에러 페이지로 노출 빈도를 제한했습니다.
+                    </p>
+                </div>
+                <div class="outputsystem__img"></div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 아웃풋 ui --------------------->
+    <section class="outputui">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="outputui__contents">
+                <div class="description-description">
+                    <p class="outputui__description p-body w-80">
+                        누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                        컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다.
+                        넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.        
+                        </br></br>
+                        부드러운 이미지와 함께 가벼운 느낌을 함께 주어 '누구나 사용할 수 있는 쉬운 툴'을 강조하려 했습니다.
+                        아기자기하고 귀여운 요소가 적용된 일러스트를 제공하여 무겁지 않고 발랄하고 가벼운 인상을 심어주려 노력했습니다.
+                        일러스트의 노출 빈도가 잦을 경우, 오히려 전문적인 이미지에 손실이 갈 수 있어 로그인 / 500 에러 / 404 에러 페이지로 노출 빈도를 제한했습니다.
+                    </p>
+                </div>
+                <div class="outputui__img"></div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- 뉴스 --------------------->
+    <section class="news">
+        <div class="section__wrap padding">
+            <div class="section__title-wrap">
+                <div class="section__bar"></div>
+                <div class="section__subtitle">문제 02 -결과</div>
+                <h2 class="section__title">쉽게</h2>
+            </div>
+            <div class="news__contents">
+                <ul class="new01">
+                    <li class="new01__img"></li>
+                    <li>
+                        <div>
+                            <h6 class="w-100">빅데이터</h6>
+                            <p class="p-body w-80">
+                                누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                                컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다. 
+                                넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.
+                            </p>
+                            <a href="#"><p class="p-body w-80">뉴스 바로가기 ></p></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="new02">
+                    <li class="new02__img"></li>
+                    <li>
+                        <div>
+                            <h6 class="w-100">빅데이터</h6>
+                            <p class="p-body w-80">
+                                누구나 사용할 수 있는 쉬운 툴'을 강조하기 위해, 딱딱함을 탈피하고 부드러움을 강조하여 노력했습니다.
+                                컴포넌트의 각 모서리에 곡선을 사용하여 각진 느낌을 없애고 형태적인 부드러움을 제공합니다. 
+                                넓은 영역을 차지하는 Header나 Menu 영역에 그라데이션을 적극적으로 활용하여 색상의 부드러움을 강조했습니다.
+                            </p>
+                            <a href="#"><p class="p-body w-80">뉴스 바로가기 ></p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

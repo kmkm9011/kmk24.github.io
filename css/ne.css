@@ -1,0 +1,1054 @@
+body{background-color: #252525;}
+
+/* .cover{background-image: url("../img/ne/cover.png");} */
+.cover{
+    background: #00000026;
+    background: linear-gradient(180deg, #0000004d 40%, #00000000 100%),
+    url("../img/ne/cover.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-------------------- 인트로 --------------------*/
+.intro .section__wrap{
+    padding:0px;
+}
+.intro .intro__contents{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro__contents li{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro__contents li:nth-child(1){
+    width: 50%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-1.png");
+}
+.intro__contents li:nth-child(2){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-2.png");
+}
+.intro__contents li:nth-child(3){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-3.png");
+}
+.intro__contents li:nth-child(4){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-4.png");
+}
+.intro__contents li:nth-child(5){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-5.png");
+}
+.intro__contents li:nth-child(6){
+    width: 50%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-6.png");
+}
+.intro__contents li:nth-child(7){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-7.png");
+}
+.intro__contents li:nth-child(8){
+    width: 25%;
+    padding-bottom: 25%;
+    background-image:url("../img/ne/img-intro-8.png");
+}
+.intro__contents > li:nth-child(9){
+    width: calc(50% - 160px);
+    padding: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+.chip-flex{height: fit-content}
+/* 인트로 1400 이하 */
+.intro-1400 > .intro__contents{display: none;}
+
+/*-------------------- 문제점 --------------------*/
+.problem__contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.problem__contents > p{
+    grid-column: 1 / 4;
+}
+.problem__contents .problem__img{
+    grid-column: 1 / 4;
+    padding-bottom: 7%;
+    min-height: 140px;
+    border-radius: 16px;
+    background-image: url("../img/ne/img-problem.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+.problem__contents .problem__arrow{
+    height: 20px;
+    opacity: 20%;
+    background-image: url("../img/img-arrow-b.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.problem__contents .problem__problem{
+    border-radius: 16px;
+    background-color: #ffffff0d;
+    padding: 40px;
+}
+.problem__contents .problem__problem li:nth-child(2){
+    margin-bottom: 24px;
+}
+.problem__contents .problem__problem li:nth-child(3) p{margin-bottom: 6px;}
+.problem__contents .problem__problem li:nth-child(3) p:last-child{margin-bottom: 0px;}
+.problem__contents .problem__problem li p .quote-l{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.problem__contents .problem__question{
+    padding: 24px 16px;
+    border-radius: 37px;
+    border: 2px solid #ffffff1a;
+    text-align: center;
+}
+.problem__contents .problem__question.block2{
+    grid-column: 1 / 3;
+}
+.problem__contents .problem__question .quote-l,
+.problem__contents .problem__question .quote-r{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+/*-------------------- 문제점01 - 인사이트 --------------------*/
+.problem01in__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.problem01in__contents .description-chip{
+    grid-column: 1 / 3;
+}
+.problem01in__contents .problem01in__a,
+.problem01in__contents .problem01in__b{
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+/* a타입 */
+.problem01in__contents .problem01in__a{
+    border: 2px solid #ffffff33;
+}
+.problem01in__contents .problem01in__a .problem01in_pass{
+    margin-top: 24px;
+    text-align: center;
+}
+/* b타입 */
+.problem01in__contents .problem01in__b{
+    border: 6px solid #ffffffe6;
+}
+.problem01in__contents .problem01in__select{
+    height: 40px;
+    margin-top: 24px;
+    text-align: center;
+}
+.problem01in__contents .problem01in__select .quote-l,
+.problem01in__contents .problem01in__select .quote-r{
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+}
+/* ab타입 */
+.problem01in__contents .problem01in__title{
+    margin-bottom: 12px;
+}
+.problem01in__contents .problem01in__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.problem01in__contents .problem01in__img div{
+    padding-bottom: 100%;
+    border-radius: 8px;
+    background-color: rebeccapurple;
+ }
+.problem01in__contents .problem01in__type{
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+.problem01in__contents .problem01in_arrow{
+    height: 20px;
+    opacity: 20%;
+    background-image: url("../img/img-arrow-b.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.problem01in__contents .problem01in_problem{
+    height: 94px;
+    margin: 24px 0;
+}
+.problem01in__contents .problem01in_problem p{
+    display: none;
+}
+/* 문제점-최상단 */
+.problem01in__problem{
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 94px;
+    margin: 0 40px;
+    bottom: 154px;
+    
+    padding: 24px;
+    background-color: #252525;
+    border: 2px solid #ffffff33;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*-------------------- 문제점01 - 결과1 --------------------*/
+.problem01re01__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.problem01re01__contents .description-chip{
+    grid-column: 1 / 3;
+}
+.problem01re01__contents .problem01re01__a,
+.problem01re01__contents .problem01re01__b{
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #ffffff33;
+    box-sizing: border-box;
+
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+.problem01re01__contents .problem01re01__title{
+    display: flex;
+}
+.problem01re01__contents .problem01re01__title h6{
+    width: 70%;
+}
+.problem01re01__contents .problem01re01__title p{
+    width: 30%;
+    text-align: right;
+}
+.problem01re01__contents .problem01re01__description{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.problem01re01__contents .problem01re01__color{
+    max-width: 516px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.problem01re01__contents .problem01re01__color li{
+    padding-bottom: 60%;
+    border-radius: 8px;
+    background-color: red;
+}
+.problem01re01__contents .problem01re01__arrow{
+    height: 20px;
+    margin: 24px 0;
+    opacity: 20%;
+    background-image: url("../img/img-arrow-b.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.problem01re01__contents .problem01re01__process{
+    max-width: 516px;
+    max-height: 245px;
+    margin: auto;
+}
+.problem01re01__contents .problem01re01__process ul{
+    display: grid;
+    grid-template-columns: 1fr 14px 1fr 14px 1fr 14px 1fr;
+    column-gap: 8px;
+    margin-bottom: 12px;
+}
+.problem01re01__contents .problem01re01__process ul .problem01re01__img{
+    padding-bottom: 100%;
+    border-radius: 8px;
+    border: 1px solid #ffffff33;
+    box-sizing: border-box;
+}
+.problem01re01__contents .problem01re01__process ul .problem01re01__p{
+    display: flex;
+    align-items: center;
+}
+.problem01re01__contents .problem01re01__process ul p{
+    width: 100%;
+    text-align: center;
+}
+.problem01re01__contents .problem01re01__logo{
+    height: 180px;
+}
+/* 결과-최상단 */
+.problem01re01__contents > .problem01re01__logo{
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 180px;
+    margin: 0 40px;
+    bottom: 40px;
+    
+    padding: 24px;
+    background-color: #252525;
+    border: 6px solid #ffffffe6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.problem01re01__contents > .problem01re01__logo h6{
+    margin-bottom: 8px;
+}
+.problem01re01__contents > .problem01re01__logo ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1056px;
+    height: 88px;
+    overflow: hidden;
+    margin: auto;
+}
+.problem01re01__contents > .problem01re01__logo ul li{
+    width: 80px;
+    height: 80px;
+    margin: 4px 4px;
+    background-color: orange;
+}
+/*-------------------- 문제점01 - 결과2 --------------------*/
+.problem01re02__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.problem01re02__contents .description-chip{
+    grid-column: 1 / 3;
+}
+.problem01re02__contents .problem01re02__a,
+.problem01re02__contents .problem01re02__b{
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #ffffff33;
+    box-sizing: border-box;
+
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+.problem01re02__contents .problem01re02__title{
+    display: flex;
+}
+.problem01re02__contents .problem01re02__title h6{
+    width: 70%;
+}
+.problem01re02__contents .problem01re02__title p{
+    width: 30%;
+    text-align: right;
+}
+.problem01re02__contents .problem01re02__description{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.problem01re02__contents .problem01re02__img{
+    padding-bottom: 100%;
+    border-radius: 8px;
+    background-color: red;
+}
+/*-------------------- 문제점02 - 인사이트 --------------------*/
+.problem02in__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.problem02in__contents .description-chip{
+    grid-column: 1 / 3;
+}
+.problem02in__contents .problem02in__a,
+.problem02in__contents .problem02in__b{
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+.problem02in__contents .problem02in__a{
+    border: 2px solid #ffffff33;
+}
+.problem02in__contents .problem02in__b{
+    border: 6px solid #ffffffe6;
+}
+.problem02in__contents .problem02in__description{
+    margin-top: 12px;
+}
+
+.problem02in__contents .problem02in__title{
+    margin-bottom: 12px;
+}
+.problem02in__contents .problem02in__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.problem02in__contents .problem02in__img li{
+    padding-bottom: 100%;
+    border-radius: 8px;
+    background-color: red;
+}
+/*-------------------- 문제점02 - 결과 --------------------*/
+.problem02re__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+.problem02re__contents .problem02re__img{
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    column-gap: 24px;
+    row-gap: 12px;
+}
+.problem02re__contents .problem02re__before div,
+.problem02re__contents .problem02re__after div{
+    padding-bottom: 50%;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: red;
+}
+.problem02re__contents .problem02re__before div:last-child,
+.problem02re__contents .problem02re__after div:last-child{
+    margin-bottom: 0px;
+}
+.problem02re__contents .problem02re__arrow{
+    width: 20px;
+    height: 100%;
+    opacity: 20%;
+    background-image: url("../img/img-arrow-r.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*-------------------- 결과 --------------------*/
+.result__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.result__contents .description-description{
+    grid-column: 1 / 3;
+}
+.result__contents .result__chart-a,
+.result__contents .result__chart-b{
+    position: relative;
+    margin-top: 24px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #ffffff33;
+    box-sizing: border-box;
+
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s;
+}
+.result__contents .result__title{
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    right: 60px;
+    padding: 12px 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 22px;
+}
+.result__contents .result__text{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.result__contents .result__chart-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.result__contents .result__chartbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    padding: 0 20%;
+}
+.result__contents .result__chartbar div{
+    border-radius: 8px 8px 0 0;
+}
+.result__contents .result__chartbar > div:nth-child(1){
+    padding-bottom: 400%;
+    background-color: #ffffff;
+    opacity: 20%;
+}
+.result__contents .result__bottom{
+    height: 2px;
+    margin-bottom: 16px;    
+    background-color: #ffffff33;
+}
+.result__contents .result__chart-a h6,
+.result__contents .result__chart-a p,
+.result__contents .result__chart-b h6,
+.result__contents .result__chart-b p{
+    text-align: center;
+}
+/* 차트 높이 */
+.result__contents .result__chart-a .result__chart01 .result__chartbar > div:nth-child(2),
+.result__contents .result__chart-a .result__chart02 .result__chartbar > div:nth-child(2),
+.result__contents .result__chart-b .result__chart01 .result__chartbar > div:nth-child(2),
+.result__contents .result__chart-b .result__chart02 .result__chartbar > div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+}
+.result__contents .result__chart-a .result__chart01 .result__chartbar > div:nth-child(2) div,
+.result__contents .result__chart-a .result__chart02 .result__chartbar > div:nth-child(2) div,
+.result__contents .result__chart-b .result__chart01 .result__chartbar > div:nth-child(2) div,
+.result__contents .result__chart-b .result__chart02 .result__chartbar > div:nth-child(2) div{
+    width: 100%;
+    background-color: #ffffff;
+}
+.result__contents .result__chart-a .result__chart01 .result__chartbar div:nth-child(2) div{
+    padding-bottom: 100%;
+}
+.result__contents .result__chart-a .result__chart02 .result__chartbar div:nth-child(2) div{
+    padding-bottom: 200%;
+}
+.result__contents .result__chart-b .result__chart01 .result__chartbar div:nth-child(2) div{
+    padding-bottom: 300%;
+}
+.result__contents .result__chart-b .result__chart02 .result__chartbar div:nth-child(2) div{
+    padding-bottom: 100%;
+}
+/*-------------------- 아웃풋 로고 --------------------*/
+.outputlogo__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 104px;
+}
+.outputlogo__contents > div:first-child{
+    padding-right: 40px;
+    border-right: 2px solid #ffffff33;
+}
+.outputlogo__contents > div:last-child{
+    padding-left: 40px;
+}
+.outputlogo__contents .description-nochip p{
+    margin-top: 12px;
+}
+.outputlogo__contents .outputlogo__center{
+    max-width: 580px;
+    margin: auto;
+    padding: 52px 0;
+}
+/* 로고 조합 */
+.outputlogo__contents .outputlogo__logowrap {
+    margin-bottom: 24px;
+}
+.outputlogo__contents .outputlogo__logowrap ul{
+    display: grid;
+    grid-template-columns: 1fr 14px 1fr 14px 1fr 14px 1fr;
+    column-gap: 8px;
+    margin-bottom: 12px;
+}
+.outputlogo__contents .outputlogo__logowrap ul:last-child{
+    margin-bottom: 0px;
+}
+.outputlogo__contents .outputlogo__logowrap ul p{
+    width: 100%;
+    text-align: center;
+}
+.outputlogo__contents .outputlogo__logowrap .outputlogo__logoimg li:nth-child(odd){
+    padding-bottom: 100%;
+    border-radius: 8px;
+    border: 1px solid #ffffff33;
+    box-sizing: border-box;
+    background-color: pink;
+}
+.outputlogo__contents .outputlogo__logowrap .outputlogo__logoimg li:nth-child(even){
+    display: flex;
+    align-items: center;
+}
+
+/* 컬러 바 */
+.outputlogo__contents .outputlogo__colorwrap .outputlogo__color{
+    height: 16px;
+    background-color: red;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.outputlogo__contents .outputlogo__colorwrap .outputlogo__colortet{
+    display: flex;
+}
+.outputlogo__contents .outputlogo__colorwrap .outputlogo__colortet p{
+    width: 50%;
+}
+.outputlogo__contents .outputlogo__colorwrap .outputlogo__colortet p:last-child{
+    text-align: right;
+}
+/* 로고 이미지 */
+.outputlogo__contents .outputlogo__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.outputlogo__contents .outputlogo__img li{
+    padding-bottom: 100%;
+    border-radius: 8px;
+    background-color: red;
+}
+.outputlogo__contents .outputlogo__img li:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+/*-------------------- 아웃풋 디자인 시스템 --------------------*/
+.outputsystem__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+.outputsystem__contents .outputsystem__img{
+    padding-bottom: 50%;
+    background-color: red;
+    border-radius: 8px;
+}
+/*-------------------- 아웃풋 ui --------------------*/
+.outputui__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+.outputui__contents .outputui__img{
+    padding-bottom: 50%;
+    background-color: red;
+    border-radius: 8px;
+}
+/*-------------------- 뉴스 --------------------*/
+.news__contents{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+.news__contents ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+.news__contents ul li:nth-child(1){
+    padding-bottom: 50%;
+    border-radius: 8px;
+    background-color: red;
+}
+.news__contents ul li:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+}
+.news__contents ul li:nth-child(2) div > .p-body{
+    margin: 12px 0 24px 0;
+}
+.news__contents ul li:nth-child(2) div > a{
+    text-decoration: none;
+}
+.news__contents ul li:nth-child(2) div > a p{
+    text-align: right;
+}
+@media screen and (max-width: 1400px) { 
+    /* 인트로 1400 이상 */
+    body .intro{
+        min-height: 0;
+    }
+    .intro .intro__contents {
+        grid-column: 1 / 2;
+        grid-template-rows: 1fr 1fr;
+    }
+    .intro .intro__contents li:nth-child(n+1):nth-child(-n+8){
+        display: none;
+    }
+    .intro__contents > li:nth-child(9){
+        width: calc(100% - 160px);
+        padding: 16px 80px 80px 80px;
+        align-content: stretch;
+        
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    .section__wrap .intro__contents li:nth-child(9) .chip-wrap{display: none;}
+    /* 인트로 1400 이하 */
+    .intro-1400 > .intro__contents{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*-------------------- 뉴스 --------------------*/
+    .news__contents{
+        margin-top: 40px;
+    }
+} 
+@media screen and (max-width: 1024px) { 
+    /* 인트로 */
+    .intro__contents > li:nth-child(9){
+        width: calc(100% - 104px);
+        padding: 16px 52px 52px 52px;
+        align-content: stretch;
+        
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    /* 문제점 */
+    .problem__contents{
+        grid-template-columns: 1fr;
+        column-gap: 24px;
+        row-gap: 16px;
+    }
+    .problem__contents > p{grid-column: 1 / 2;}
+    .problem__contents .problem__img{grid-column: 1 / 2;}
+    .problem__contents .problem__arrow.hide{display: none;}
+    .problem__contents .problem__problem{
+        padding: 24px;
+        text-align: center;
+    }
+    .problem__contents .problem__problem li:nth-child(1){display: none;}
+    .problem__contents .problem__problem li:nth-child(2){margin-bottom: 16px;}
+    .problem__contents .problem__problem li p .quote-l{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+    }
+    .problem__contents .problem__question.block2{
+        grid-column: 1 / 2;
+    }
+    /* 문제01 - 인사이트 */
+    .problem01in__contents{
+        grid-template-columns: 1fr;
+    }
+    .problem01in__contents .description-chip{
+        grid-column: 1 / 2;
+    }
+    .problem01in__contents .problem01in_problem{
+        width: 100%;
+        margin: 24px 0;
+        height: auto;
+        
+        padding: 24px;
+        background-color: #252525;
+        border: 2px solid #ffffff33;
+        border-radius: 8px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .problem01in__contents .problem01in_problem p{
+        display: block;
+    }
+    .problem01in__contents .problem01in__select{
+        height: auto;
+    }
+    .problem01in__problem{
+        display: none;
+    }
+    /* 문제01 - 결과01 */
+    .problem01re01__contents{
+        grid-template-columns: 1fr;
+    }
+    .problem01re01__contents .description-chip{
+        grid-column: 1 / 2;
+    }
+    /* 결과-최상단 */
+    .problem01re01__contents div .problem01re01__arrow{
+        display: none;
+    }
+    .problem01re01__contents div .problem01re01__logo{
+        display: none;
+    }
+    .problem01re01__contents > .problem01re01__logo{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        bottom: auto; 
+    }
+    .problem01re01__contents > .problem01re01__logo ul{
+        height: auto;
+    }
+    /* 문제01 - 결과02 */
+    .problem01re02__contents{
+        grid-template-columns: 1fr;
+    }
+    .problem01re02__contents .description-chip{
+        grid-column: 1 / 2;
+    }
+    /* 문제02 - 인사이트 */
+    .problem02in__contents{
+        grid-template-columns: 1fr;
+    }
+    .problem02in__contents .description-chip{
+        grid-column: 1 / 2;
+    }
+    /*-------------------- 문제점02 - 결과 --------------------*/
+    .problem02re__contents .problem02re__img{
+        grid-template-columns: 1fr;
+    }
+    .problem02re__contents .problem02re__arrow{
+        width: 100%;
+        height: 20px;
+        background-image: url("../img/img-arrow-b.png");
+    }
+    /*-------------------- 결과 --------------------*/
+    .result__contents{
+        grid-template-columns: 1fr;
+    }
+    .result__contents .description-nochip{
+        grid-column: 1 / 2;
+    }
+    /*-------------------- 아웃풋 로고 --------------------*/
+    .outputlogo__contents{
+        grid-template-columns: 1fr;
+    }
+    .outputlogo__contents > div:first-child{
+        padding-right: 0px;
+        border-right: none;
+    }
+    .outputlogo__contents > div:last-child{
+        padding-left: 0px;
+    }
+    /*-------------------- 뉴스 --------------------*/
+    .news__contents{
+        row-gap: 52px;
+    }
+    .news__contents ul{
+        grid-template-columns: 1fr;
+    }
+} 
+@media screen and (max-width: 768px) { 
+    /* 인트로 */
+    .intro__contents > li:nth-child(9){
+        width: 100%;
+        padding: 16px 52px 52px 52px;
+        align-content: stretch;
+        
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    /* 인트로 1400 이하 */
+    .intro__contents li:nth-child(1){
+        width: 100%; 
+        padding-bottom: 50%;
+    }
+    .intro__contents li:nth-child(2){display: none;}
+    .intro__contents li:nth-child(3){
+        width: 50%;
+        padding-bottom: 50%;
+    }
+    .intro__contents li:nth-child(4){display: none;}
+    .intro__contents li:nth-child(5){
+        width: 50%;
+        padding-bottom: 50%;
+    }
+    .intro__contents li:nth-child(6){
+        width: 100%;
+        padding-bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    /* 인트로 */
+    .intro__contents > li:nth-child(9){
+        padding: 16px 32px 32px 32px;
+
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    /* 문제점 */
+    .problem__contents .problem__img{
+        background-image: url("../img/ne/img-problem-480.png");
+    }
+    /*-------------------- 문제점01 - 인사이트 --------------------*/
+    .problem01in__contents .problem01in__a,
+    .problem01in__contents .problem01in__b{
+        padding: 24px;
+
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    .problem01in__contents .problem01in__img{
+        grid-template-columns: 1fr;
+    }
+    /*-------------------- 문제점01 - 결과1 --------------------*/
+    .problem01re01__contents .problem01re01__a,
+    .problem01re01__contents .problem01re01__b{
+        padding: 24px;
+
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    .problem01re01__contents .problem01re01__color{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .problem01re01__contents .problem01re01__color li{
+        padding-bottom: 40%;
+    }
+    .problem01re01__contents .problem01re01__arrow{
+        height: 20px;
+        margin: 24px 0;
+        opacity: 20%;
+        background-image: url("../img/img-arrow-b.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .problem01re01__contents .problem01re01__process{
+        max-width: 516px;
+        max-height: 245px;
+        margin: auto;
+    }
+    .problem01re01__contents .problem01re01__process ul{
+        display: grid;
+        grid-template-columns: 1fr 14px 1fr 14px 1fr 14px 1fr;
+        column-gap: 4px;
+        margin-bottom: 4px;
+    }
+    /* 결과-최상단 */
+    .problem01re01__contents > .problem01re01__logo ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 4px;
+        row-gap:4px;
+    }
+    .problem01re01__contents > .problem01re01__logo ul li{
+        width: auto;
+        height: auto;
+        padding-bottom: 100%;
+        margin: 0;
+    }
+    /*-------------------- 문제점01 - 결과2 --------------------*/
+    .problem01re02__contents .problem01re02__a,
+    .problem01re02__contents .problem01re02__b{
+        padding: 24px;
+
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    /*-------------------- 문제점02 - 인사이트 --------------------*/
+    .problem02in__contents .problem02in__a,
+    .problem02in__contents .problem02in__b{
+        padding: 24px;
+
+        -webkit-transition: padding 1s;
+        -moz-transition: padding 1s;
+        -ms-transition: padding 1s;
+        -o-transition: padding 1s;
+        transition: padding 1s;
+    }
+    /*-------------------- 아웃풋 로고 --------------------*/
+    .outputlogo__contents .outputlogo__center{
+        padding: 40px 0;
+    }
+    /* 로고 조합 */
+    .outputlogo__contents .outputlogo__logowrap {
+        margin-bottom: 12px;
+    }
+    .outputlogo__contents .outputlogo__logowrap ul{
+        column-gap: 4px;
+        margin-bottom: 8px;
+    }
+    /* 로고 이미지 */
+    .outputlogo__contents .outputlogo__img{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+    .outputlogo__contents .outputlogo__img li{
+        padding-bottom: 100%;
+        border-radius: 8px;
+        background-color: red;
+    }
+    .outputlogo__contents .outputlogo__img li:nth-child(3){
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+}
