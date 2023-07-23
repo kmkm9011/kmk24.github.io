@@ -54,7 +54,6 @@ h6{font: 18px / 20px 'GangwonEduPowerExtraBoldA', sans-serif;word-break: keep-al
 .section__wrap{
     max-width: 1920px;
     margin: auto;
-    height: -webkit-fill-available;
     display: grid;
     grid-template-rows: 1fr;
     column-gap: 40px;

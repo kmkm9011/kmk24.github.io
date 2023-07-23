@@ -755,6 +755,9 @@ body{background-color: #252525;}
 } 
 @media screen and (max-width: 1024px) { 
     /* 인트로 */
+    .intro .section__wrap{
+        height: fit-content;
+    }
     .intro__contents > li:nth-child(9){
         width: calc(100% - 104px);
         padding: 16px 52px 52px 52px;
